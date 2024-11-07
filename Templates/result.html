@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Similarity Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Document Similarity Result</h1>
+        <div class="document-info">
+            <p><strong>Document 1:</strong></p>
+            <p>{{ doc1 }}</p>
+        </div>
+        <div class="document-info">
+            <p><strong>Document 2:</strong></p>
+            <p>{{ doc2 }}</p>
+        </div>
+        <div class="result-info">
+            <p><strong>Similarity Percentage:</strong> {{ similarity_percentage }}%</p>
+            <p><strong>Similarity Category:</strong> {{ similarity_category }}</p>
+        </div>
+        <a href="/" class="back-to-home-button">Back to Home</a>
+    </div>
+</body>
+</html>

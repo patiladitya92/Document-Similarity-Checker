@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Similarity Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Document Similarity Checker</h1>
+        <form action="/compare" method="post">
+            <label for="doc1">Document 1:</label>
+            <textarea name="doc1" rows="4" cols="50" required></textarea>
+            <br>
+            <label for="doc2">Document 2:</label>
+            <textarea name="doc2" rows="4" cols="50" required></textarea>
+            <br>
+            <input type="submit" value="Compare">
+        </form>
+    </div>
+</body>
+</html>
